@@ -31,7 +31,7 @@ h1 {
     padding-right: 20px;
     
 }
-#randomNumDisp {
+.randomNumDisp {
     background-color: lightgreen;
     width: 250px;
     height: 70px;
