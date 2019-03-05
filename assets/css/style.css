@@ -1,0 +1,85 @@
+/*
+        style.css
+
+*/
+
+body {
+    background-color: lightblue; 
+    background-image: url("../images/temp-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1 {
+    background-color: brown;
+    width: 350px;
+    height: 65px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding-top: 35px;
+}
+
+#instructions {
+    background-color: beige;
+    width: 550px;
+    height: 350px;
+    color: green;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+#randomNumDisp {
+    background-color: lightgreen;
+    width: 250px;
+    height: 70px;
+    float: left;
+    font-size: 25px;
+    padding-left: 10px;
+ 
+ }
+ #playerWLDisp {
+    background-color: cyan;
+    width: 70px;
+    height: 60px;
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+.crystalImg {
+    background-color: lightgrey;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+#playerScoreDisp,
+#playerScoreTitle {
+    background-color: teal;
+    color: white;
+    width: 250px;
+    clear: left;
+}
+#playerScoreDisp {
+    height: 70px;
+    padding-left: 10px;
+    font-size: 25px;
+}
+#playerScoreTitle {
+    height: 20px;
+    padding-left: 10px;
+}
+
+h1,
+#instructions,
+#randomNumDisp,
+#playerWLDisp,
+.crystalImg,
+#playerScoreDisp,
+#playerScoreTitle {
+    margin: 7px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

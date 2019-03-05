@@ -1,62 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel ="stylesheet" href ="assets/css/reset.css">
-    <link rel ="stylesheet" href ="assets/css/style.css">
+    <!-- Added link to the jQuery Library -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+
 <body>
     <!-- Headline -->
-    <div><h1>CrystalsCollector!</h1></div>
+    <h1>CrystalsCollector!</h1>
 
     <!-- instructions -->
-    <div>
+    <div id="instructions">
         <p>
-        You will be given a random number at the start of the game.
-         </p>
-         <p>
-             There are four crystals below. By clicking on a 
-             crystal you will add a specific amount of points to your total score.
-         </p>
-         <p>
-             You win the game by matching your total score to random number, you
-             lose the game if your total score goes above the random number.
-         </p>
-         <p>
-             The value of each crystal is hidden from you until you click on it.
-         </p>
-
+            You will be given a random number at the start of the game.
+        </p>
+        <br>
+        <p>
+            There are four crystals below. By clicking on a
+            crystal you will add a specific amount of points to your total score.
+        </p>
+        <br>
+        <p>
+            You win the game by matching your total score to random number, you
+            lose the game if your total score goes above the random number.
+        </p>
+        <br>
+        <p>
+            The value of each crystal is hidden from you until you click on it.
+        </p>
+        <br>
         <p>
             Each time when the game starts, the game will change the values of each crystal
         </p>
-</div>
+    </div>
 
     <!-- random number generated -->
-    <div><label>random number</label></div>
+    <div id="randomNumDisp"><label>random number</label></div>
 
     <!-- number of wins and loses -->
-    <div style="background:red">
+    <div id="playerWLDisp">
         <div>Wins: <label>0</label></div>
-        <div>Losses: <label>0</label></div>
+        <div style="padding-top:10px">Losses: <label>0</label></div>
     </div>
 
     <!--images of the crystals-->
-    <div>
-        <img src ="">
-        <img src ="">
-        <img src ="">
-        <img src ="">
+    <div style="clear:left">
+        <img src="assets/images/num1.png" class="crystalImg" id="crystal-1" alt="c1">
+        <img src="assets/images/num1.png" class="crystalImg" id="crystal-2" alt="c2">
+        <img src="assets/images/num1.png" class="crystalImg" id="crystal-3" alt="c3">
+        <img src="assets/images/num1.png" class="crystalImg" id="crystal-4" alt="c4">
     </div>
 
     <!-- label for players score -->
-    <div>Your total score is: <label></label></div>
+    <div id="playerScoreTitle">Your total score is: </div>
 
     <!-- players current score-->
-    <div><label>0</label></div>
-</body>
+    <div id="playerScoreDisp"><label>0</label></div>
+
+    <!-- link in the javascript file -->
+    <script rel="text/javascript" src ="assets/javascript/game.js"></script>
 </html>
